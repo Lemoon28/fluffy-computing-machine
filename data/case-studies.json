@@ -1,0 +1,115 @@
+[
+  {
+    "title": "E‑Commerce Platform Redesign",
+    "slug": "ecommerce-platform-redesign",
+    "excerpt": "Revamping a legacy storefront with a modern UX and performance improvements.",
+    "content": "## Overview\nA complete redesign focusing on usability, accessibility, and conversion.\n\n### Goals\n- Improve product discovery\n- Reduce checkout friction\n- Modernize the brand\n\n### Process\n1. Research & audits\n2. Wireframes & prototypes\n3. Visual design\n4. Implementation\n\n### Results\n- +23% conversion\n- +35% faster LCP\n\n> This is sample markdown content. Images are placeholders.",
+    "images": ["/images/case-01.jpg", "/images/case-02.jpg"],
+    "tags": ["UX/UI", "E‑commerce", "Design System"]
+  },
+  {
+    "title": "Healthcare Mobile App",
+    "slug": "healthcare-mobile-app",
+    "excerpt": "A patient‑first app for appointments, records, and telehealth.",
+    "content": "## Challenge\nDesign a HIPAA‑friendly mobile experience that feels human.\n\n### Solution\n- Clear IA\n- Accessible color & type\n- Motion to guide focus\n\n### Outcome\nImproved task success and higher engagement.",
+    "images": ["/images/case-03.jpg", "/images/case-04.jpg"],
+    "tags": ["Mobile", "Healthcare", "React Native"]
+  },
+  {
+    "title": "Brand Identity & Website",
+    "slug": "brand-identity-website",
+    "excerpt": "End‑to‑end identity system and responsive marketing site.",
+    "content": "## Scope\nLogo, color, typography, components, and a fast site.\n\n### Notes\nThis case uses stock imagery and markdown blocks.",
+    "images": ["/images/case-05.jpg", "/images/case-06.jpg"],
+    "tags": ["Brand", "Web", "Next.js"]
+  },
+  {
+    "title": "Data Visualization Dashboard",
+    "slug": "data-visualization-dashboard",
+    "excerpt": "Interactive dashboard for financial analytics with realtime charts.",
+    "content": "## Overview\nA modular dashboard with filters, drill‑downs, and exportable reports.",
+    "images": ["/images/case-07.jpg", "/images/case-08.jpg"],
+    "tags": ["Data Viz", "D3", "Analytics"]
+  },
+  {
+    "title": "SaaS Onboarding Flow",
+    "slug": "saas-onboarding-flow",
+    "excerpt": "Reducing time‑to‑value with a guided setup and checklists.",
+    "content": "### Highlights\n- Progressive disclosure\n- Contextual help\n- Delightful micro‑interactions",
+    "images": ["/images/case-09.jpg", "/images/case-10.jpg"],
+    "tags": ["Product", "Growth", "UX Writing"]
+  },
+  {
+    "title": "EdTech Learning Platform",
+    "slug": "edtech-learning-platform",
+    "excerpt": "Gamified modules and progress tracking for remote learners.",
+    "content": "Quests, badges, and a focus mode to keep students engaged.",
+    "images": ["/images/case-11.jpg", "/images/case-12.jpg"],
+    "tags": ["EdTech", "Gamification", "Accessibility"]
+  },
+  {
+    "title": "Travel Booking Experience",
+    "slug": "travel-booking-experience",
+    "excerpt": "One‑page search with crisp comparisons and transparent pricing.",
+    "content": "Refined information architecture and error‑tolerant forms.",
+    "images": ["/images/case-13.jpg", "/images/case-14.jpg"],
+    "tags": ["Travel", "IA", "Forms"]
+  },
+  {
+    "title": "Fintech Savings App",
+    "slug": "fintech-savings-app",
+    "excerpt": "Automated round‑ups and goals with playful motion.",
+    "content": "Balance insights and financial nudges without anxiety.",
+    "images": ["/images/case-02.jpg", "/images/case-03.jpg"],
+    "tags": ["Fintech", "Mobile", "Motion"]
+  },
+  {
+    "title": "Non‑Profit Storytelling Site",
+    "slug": "nonprofit-storytelling-site",
+    "excerpt": "Human‑centered narratives to drive donations and impact.",
+    "content": "Optimized for readability and shareability.",
+    "images": ["/images/case-04.jpg", "/images/case-05.jpg"],
+    "tags": ["Content", "Web", "CMS‑less"]
+  },
+  {
+    "title": "Marketing Design System",
+    "slug": "marketing-design-system",
+    "excerpt": "Token‑driven library powering dozens of campaigns.",
+    "content": "Documented components and usage guidelines.",
+    "images": ["/images/case-06.jpg", "/images/case-07.jpg"],
+    "tags": ["Design System", "Tokens", "Docs"]
+  },
+  {
+    "title": "AR Furniture Preview",
+    "slug": "ar-furniture-preview",
+    "excerpt": "Place products in your space before buying.",
+    "content": "Built low‑latency previews with concise guidance.",
+    "images": ["/images/case-08.jpg", "/images/case-09.jpg"],
+    "tags": ["AR", "3D", "E‑commerce"]
+  },
+  {
+    "title": "Restaurant Ordering Kiosk",
+    "slug": "restaurant-ordering-kiosk",
+    "excerpt": "Accessible, fast, and delightful ordering flow.",
+    "content": "Large targets, step‑by‑step customization, and clear totals.",
+    "images": ["/images/case-10.jpg", "/images/case-11.jpg"],
+    "tags": ["Kiosk", "Retail", "Accessibility"]
+  },
+  {
+    "title": "B2B Analytics Workspace",
+    "slug": "b2b-analytics-workspace",
+    "excerpt": "Workbooks, dashboards, and saved views for teams.",
+    "content": "A flexible grid with collaborative features.",
+    "images": ["/images/case-12.jpg", "/images/case-13.jpg"],
+    "tags": ["B2B", "Collaboration", "Performance"]
+  },
+  {
+    "title": "Sustainability Reporting Site",
+    "slug": "sustainability-reporting-site",
+    "excerpt": "Annual ESG report with interactive data sections.",
+    "content": "Optimized typography and scrollytelling visuals.",
+    "images": ["/images/case-14.jpg", "/images/case-01.jpg"],
+    "tags": ["ESG", "Storytelling", "Web"]
+  }
+]
+
