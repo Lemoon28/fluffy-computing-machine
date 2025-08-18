@@ -1,6 +1,7 @@
 import CaseStudyCard from "@/components/CaseStudyCard";
 import data from "@/data/case-studies.json";
 import Link from "next/link";
+import ContactForm from "@/components/ContactForm";
 
 type CaseStudy = {
   title: string;
@@ -43,6 +44,27 @@ export default function Home() {
           {items.map((item) => (
             <CaseStudyCard key={item.slug} title={item.title} slug={item.slug} excerpt={item.excerpt} cover={item.cover} tags={item.tags} />
           ))}
+        </div>
+      </section>
+
+      <section className="bg-gray-50 border-t border-b border-black/5">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+          <div>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-2">About Me</h2>
+            <p className="text-gray-600 leading-relaxed">I’m a digital designer and front‑end developer focused on UX, motion, and performance. I partner with teams to turn ideas into usable, beautiful products.</p>
+            <ul className="mt-4 text-sm text-gray-600 grid grid-cols-2 gap-2">
+              <li><strong>Skills:</strong> UX/UI, Web, Mobile</li>
+              <li><strong>Tools:</strong> Figma, Next.js, Tailwind</li>
+            </ul>
+            <div className="mt-6">
+              <Link href="/about" className="px-4 py-2 rounded border border-black/10 hover:bg-gray-100 transition">More about me</Link>
+            </div>
+          </div>
+          <div>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-2">Get In Touch</h2>
+            <p className="text-gray-600 mb-4">Have a project in mind? Let’s discuss how I can help.</p>
+            <ContactForm />
+          </div>
         </div>
       </section>
     </div>
