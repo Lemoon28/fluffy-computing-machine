@@ -4,6 +4,7 @@
     "slug": "ecommerce-platform-redesign",
     "excerpt": "Revamping a legacy storefront with a modern UX and performance improvements.",
     "content": "## Overview\nA complete redesign focusing on usability, accessibility, and conversion.\n\n### Goals\n- Improve product discovery\n- Reduce checkout friction\n- Modernize the brand\n\n### Process\n1. Research & audits\n2. Wireframes & prototypes\n3. Visual design\n4. Implementation\n\n### Results\n- +23% conversion\n- +35% faster LCP\n\n> This is sample markdown content. Images are placeholders.",
+    "thumb": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop",
     "images": [
       "https://source.unsplash.com/1600x1000/?ecommerce,website,ui",
       "https://source.unsplash.com/1600x1000/?shopping,checkout,ux"
@@ -15,6 +16,7 @@
     "slug": "healthcare-mobile-app",
     "excerpt": "A patient‑first app for appointments, records, and telehealth.",
     "content": "## Challenge\nDesign a HIPAA‑friendly mobile experience that feels human.\n\n### Solution\n- Clear IA\n- Accessible color & type\n- Motion to guide focus\n\n### Outcome\nImproved task success and higher engagement.",
+    "thumb": "https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?q=80&w=1200&auto=format&fit=crop",
     "images": [
       "https://source.unsplash.com/1600x1000/?healthcare,app,medical",
       "https://source.unsplash.com/1600x1000/?doctor,telehealth,patient"
@@ -26,6 +28,7 @@
     "slug": "brand-identity-website",
     "excerpt": "End‑to‑end identity system and responsive marketing site.",
     "content": "## Scope\nLogo, color, typography, components, and a fast site.\n\n### Notes\nThis case uses stock imagery and markdown blocks.",
+    "thumb": "https://images.unsplash.com/photo-1529336953121-ad5a0d43d0d2?q=80&w=1200&auto=format&fit=crop",
     "images": [
       "https://source.unsplash.com/1600x1000/?brand,identity,logo",
       "https://source.unsplash.com/1600x1000/?website,landing,marketing"
@@ -37,6 +40,7 @@
     "slug": "data-visualization-dashboard",
     "excerpt": "Interactive dashboard for financial analytics with realtime charts.",
     "content": "## Overview\nA modular dashboard with filters, drill‑downs, and exportable reports.",
+    "thumb": "https://images.unsplash.com/photo-1551281044-8b89c2d78f39?q=80&w=1200&auto=format&fit=crop",
     "images": [
       "https://source.unsplash.com/1600x1000/?dashboard,analytics,data",
       "https://source.unsplash.com/1600x1000/?charts,dataviz"
@@ -48,6 +52,7 @@
     "slug": "saas-onboarding-flow",
     "excerpt": "Reducing time‑to‑value with a guided setup and checklists.",
     "content": "### Highlights\n- Progressive disclosure\n- Contextual help\n- Delightful micro‑interactions",
+    "thumb": "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200&auto=format&fit=crop",
     "images": [
       "https://source.unsplash.com/1600x1000/?product,onboarding,ui",
       "https://source.unsplash.com/1600x1000/?checklist,progress"
@@ -59,6 +64,7 @@
     "slug": "edtech-learning-platform",
     "excerpt": "Gamified modules and progress tracking for remote learners.",
     "content": "Quests, badges, and a focus mode to keep students engaged.",
+    "thumb": "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1200&auto=format&fit=crop",
     "images": [
       "https://source.unsplash.com/1600x1000/?education,elearning,study",
       "https://source.unsplash.com/1600x1000/?students,online-learning"
@@ -70,6 +76,7 @@
     "slug": "travel-booking-experience",
     "excerpt": "One‑page search with crisp comparisons and transparent pricing.",
     "content": "Refined information architecture and error‑tolerant forms.",
+    "thumb": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1200&auto=format&fit=crop",
     "images": [
       "https://source.unsplash.com/1600x1000/?travel,booking,airplane",
       "https://source.unsplash.com/1600x1000/?hotel,search,comparison"
@@ -81,6 +88,7 @@
     "slug": "fintech-savings-app",
     "excerpt": "Automated round‑ups and goals with playful motion.",
     "content": "Balance insights and financial nudges without anxiety.",
+    "thumb": "https://images.unsplash.com/photo-1518182170549-1140f874b9f1?q=80&w=1200&auto=format&fit=crop",
     "images": [
       "https://source.unsplash.com/1600x1000/?fintech,banking,app",
       "https://source.unsplash.com/1600x1000/?savings,finance,mobile"
@@ -92,6 +100,7 @@
     "slug": "nonprofit-storytelling-site",
     "excerpt": "Human‑centered narratives to drive donations and impact.",
     "content": "Optimized for readability and shareability.",
+    "thumb": "https://images.unsplash.com/photo-1496449903678-68ddcb189a24?q=80&w=1200&auto=format&fit=crop",
     "images": [
       "https://source.unsplash.com/1600x1000/?nonprofit,community,donation",
       "https://source.unsplash.com/1600x1000/?storytelling,people,impact"
@@ -103,6 +112,7 @@
     "slug": "marketing-design-system",
     "excerpt": "Token‑driven library powering dozens of campaigns.",
     "content": "Documented components and usage guidelines.",
+    "thumb": "https://images.unsplash.com/photo-1557264337-e8a93017fe92?q=80&w=1200&auto=format&fit=crop",
     "images": [
       "https://source.unsplash.com/1600x1000/?design-system,components,ui",
       "https://source.unsplash.com/1600x1000/?tokens,styleguide"
@@ -114,6 +124,7 @@
     "slug": "ar-furniture-preview",
     "excerpt": "Place products in your space before buying.",
     "content": "Built low‑latency previews with concise guidance.",
+    "thumb": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop",
     "images": [
       "https://source.unsplash.com/1600x1000/?augmented-reality,3d,furniture",
       "https://source.unsplash.com/1600x1000/?ar,preview,home"
@@ -125,6 +136,7 @@
     "slug": "restaurant-ordering-kiosk",
     "excerpt": "Accessible, fast, and delightful ordering flow.",
     "content": "Large targets, step‑by‑step customization, and clear totals.",
+    "thumb": "https://images.unsplash.com/photo-1565299612027-8a0f43d2f62b?q=80&w=1200&auto=format&fit=crop",
     "images": [
       "https://source.unsplash.com/1600x1000/?kiosk,ordering,restaurant",
       "https://source.unsplash.com/1600x1000/?fastfood,menu,ui"
@@ -136,6 +148,7 @@
     "slug": "b2b-analytics-workspace",
     "excerpt": "Workbooks, dashboards, and saved views for teams.",
     "content": "A flexible grid with collaborative features.",
+    "thumb": "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop",
     "images": [
       "https://source.unsplash.com/1600x1000/?b2b,analytics,workspace",
       "https://source.unsplash.com/1600x1000/?team,collaboration,saas"
@@ -147,6 +160,7 @@
     "slug": "sustainability-reporting-site",
     "excerpt": "Annual ESG report with interactive data sections.",
     "content": "Optimized typography and scrollytelling visuals.",
+    "thumb": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
     "images": [
       "https://source.unsplash.com/1600x1000/?sustainability,environment,report",
       "https://source.unsplash.com/1600x1000/?nature,data,visualization"

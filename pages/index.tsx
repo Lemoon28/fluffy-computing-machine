@@ -8,12 +8,13 @@ type CaseStudy = {
   excerpt: string;
   images: string[];
   tags?: string[];
+  thumb?: string;
 };
 
 export default function Home() {
   const items = (data as CaseStudy[]).map((d) => ({
     ...d,
-    cover: d.images?.[0] ?? "/images/case-01.jpg",
+    cover: d.thumb ?? d.images?.[0] ?? "/images/case-01.jpg",
   }));
 
   return (
