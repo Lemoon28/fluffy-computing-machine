@@ -20,16 +20,16 @@ export default function Home() {
     <div>
       <section className="bg-gray-50 border-b border-black/5">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 flex flex-col md:flex-row items-center gap-10">
-          <div className="flex-1">
+          <div className="flex-1 text-left sm:text-center md:text-left">
             <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">Creative Digital Experiences</h1>
-            <p className="mt-3 text-gray-600 max-w-prose">I craft user‑friendly and visually engaging digital solutions that combine aesthetic excellence with functional design principles.</p>
-            <div className="mt-6 flex gap-3">
+            <p className="mt-3 text-gray-600 max-w-prose sm:mx-auto md:mx-0">I craft user‑friendly and visually engaging digital solutions that combine aesthetic excellence with functional design principles.</p>
+            <div className="mt-6 flex gap-3 justify-start sm:justify-center md:justify-start">
               <a href="#work" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">View Projects</a>
               <Link href="/contact" className="px-4 py-2 rounded border border-black/10 hover:bg-gray-100 transition">Get In Touch</Link>
             </div>
           </div>
           <div className="flex-1">
-            <div className="mx-auto size-48 sm:size-56 rounded-full bg-gray-100 border border-black/5 shadow-inner flex items-center justify-center text-6xl">🧑‍💻</div>
+            <div className="mx-auto size-72 sm:size-84 rounded-full bg-gray-100 border border-black/5 shadow-inner flex items-center justify-center text-7xl">🧑‍💻</div>
           </div>
         </div>
       </section>
