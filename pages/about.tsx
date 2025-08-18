@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
       <div className="relative aspect-square w-full max-w-sm md:max-w-none md:w-full rounded-2xl overflow-hidden border border-black/5">
-        <Image src="/images/case-07.jpg" alt="Portrait" fill className="object-cover" />
+        <Image src="/images/profile.jpg" alt="Portrait of Lem Tippong" fill className="object-cover" />
       </div>
       <div>
         <h1 className="text-3xl font-bold tracking-tight mb-4">About Me</h1>

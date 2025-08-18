@@ -1,6 +1,7 @@
 import CaseStudyCard from "@/components/CaseStudyCard";
 import data from "@/data/case-studies.json";
 import Link from "next/link";
+import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 
 type CaseStudy = {
@@ -31,7 +32,9 @@ export default function Home() {
             </div>
           </div>
           <div className="flex-1 flex md:justify-end">
-            <div className="mx-auto md:ml-auto md:mr-0 size-72 sm:size-84 rounded-full bg-gray-100 border border-black/5 shadow-inner flex items-center justify-center text-7xl">🧑‍💻</div>
+            <div className="relative mx-auto md:ml-auto md:mr-0 size-72 sm:size-84 rounded-full overflow-hidden border border-black/5 shadow-inner">
+              <Image src="/images/profile.jpg" alt="Portrait of Lem Tippong" fill className="object-cover" />
+            </div>
           </div>
         </div>
       </section>
