@@ -29,8 +29,8 @@ export default function Home() {
               <Link href="/contact" className="px-4 py-2 rounded border border-black/10 hover:bg-gray-100 transition">Get In Touch</Link>
             </div>
           </div>
-          <div className="flex-1">
-            <div className="mx-auto size-72 sm:size-84 rounded-full bg-gray-100 border border-black/5 shadow-inner flex items-center justify-center text-7xl">🧑‍💻</div>
+          <div className="flex-1 flex md:justify-end">
+            <div className="mx-auto md:ml-auto md:mr-0 size-72 sm:size-84 rounded-full bg-gray-100 border border-black/5 shadow-inner flex items-center justify-center text-7xl">🧑‍💻</div>
           </div>
         </div>
       </section>
