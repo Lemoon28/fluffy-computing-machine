@@ -21,18 +21,18 @@ export default function Home() {
 
   return (
     <div>
-      <section className="bg-gray-50 dark:bg-slate-900 border-b border-black/5 dark:border-white/10">
+      <section className="bg-gray-50 border-b border-black/5">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 flex flex-col md:flex-row items-center gap-10">
           <div className="flex-1 text-left sm:text-center md:text-left">
             <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">Creative Digital Experiences</h1>
-            <p className="mt-3 text-gray-600 dark:text-slate-300 max-w-prose sm:mx-auto md:mx-0">I craft user‑friendly and visually engaging digital solutions that combine aesthetic excellence with functional design principles.</p>
+            <p className="mt-3 text-gray-600 max-w-prose sm:mx-auto md:mx-0">I craft user‑friendly and visually engaging digital solutions that combine aesthetic excellence with functional design principles.</p>
             <div className="mt-6 flex gap-3 justify-start sm:justify-center md:justify-start">
               <a href="#work" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">View Projects</a>
-              <Link href="/contact" className="px-4 py-2 rounded border border-black/10 dark:border-white/10 hover:bg-gray-100 dark:hover:bg-slate-800 transition">Get In Touch</Link>
+              <Link href="/contact" className="px-4 py-2 rounded border border-black/10 hover:bg-gray-100 transition">Get In Touch</Link>
             </div>
           </div>
           <div className="flex-1 flex md:justify-end">
-            <div className="relative mx-auto md:ml-auto md:mr-0 size-72 sm:size-84 rounded-full overflow-hidden border border-black/5 dark:border-white/10 shadow-inner">
+            <div className="relative mx-auto md:ml-auto md:mr-0 size-72 sm:size-84 rounded-full overflow-hidden border border-black/5 shadow-inner">
               <Image src="/images/profile.jpg" alt="Portrait of Lem Tippong" fill className="object-cover" />
             </div>
           </div>

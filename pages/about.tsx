@@ -9,7 +9,7 @@ export default function About() {
       </div>
       <div>
         <h1 className="text-3xl font-bold tracking-tight mb-4">About Me</h1>
-        <p className="text-gray-600 dark:text-slate-300 leading-relaxed">I am a passionate digital designer and front‑end developer with over 5 years of experience crafting user‑centered solutions. I blend creative direction with systems‑thinking to deliver designs that feel effortless and perform beautifully.</p>
+        <p className="text-gray-600 leading-relaxed">I am a passionate digital designer and front‑end developer with over 5 years of experience crafting user‑centered solutions. I blend creative direction with systems‑thinking to deliver designs that feel effortless and perform beautifully.</p>
         <ul className="mt-6 grid grid-cols-2 gap-3 text-sm">
           <li><strong>Skills:</strong> UX/UI, Web, Mobile, Branding</li>
           <li><strong>Tools:</strong> Figma, Next.js, Tailwind CSS</li>
