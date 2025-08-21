@@ -1,11 +1,11 @@
-import ContactForm from "@/components/ContactForm";
 import { motion } from "framer-motion";
+import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
   const contactInfo = [
-    { icon: "📧", label: "Email", value: "hello@portfolio.com", href: "mailto:hello@portfolio.com" },
-    { icon: "📱", label: "Phone", value: "+1 (555) 123-4567", href: "tel:+15551234567" },
-    { icon: "📍", label: "Location", value: "San Francisco, CA", href: "#" }
+    { icon: "📧", label: "Email", value: "lileatingmachine@gmail.com", href: "mailto:lileatingmachine@gmail.com", isLink: true },
+    { icon: "💼", label: "LinkedIn", value: "Kitchaya Tippong", href: "https://www.linkedin.com/in/kitchaya-tippong-95329b212", isLink: true },
+    { icon: "📍", label: "Location", value: "Bangkok, Thailand", href: "#", isLink: false }
   ];
 
   return (
@@ -50,6 +50,7 @@ export default function Contact() {
             </motion.div>
           </motion.div>
           
+          {/* Contact Information */}
           <motion.div 
             className="text-sm text-gray-600"
             initial={{ opacity: 0, x: 50 }}
@@ -74,30 +75,42 @@ export default function Contact() {
               {contactInfo.map((item, index) => (
                 <motion.li 
                   key={item.label}
-                  className="flex items-start gap-4 p-4 rounded-lg bg-white/50 backdrop-blur-sm border border-gray-200/50 hover:shadow-md transition-all duration-300"
+                  className={`flex items-start gap-4 p-4 rounded-lg bg-white/50 backdrop-blur-sm border border-gray-200/50 transition-all duration-300 ${
+                    item.isLink ? 'hover:shadow-md cursor-pointer' : ''
+                  }`}
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: 1.4 + index * 0.1, ease: "easeOut" }}
-                  whileHover={{ 
+                  whileHover={item.isLink ? { 
                     scale: 1.02, 
                     x: 4,
                     transition: { duration: 0.2, ease: "easeOut" }
-                  }}
+                  } : {}}
                 >
-                  <span className="text-2xl">{item.icon}</span>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">{item.label}</h3>
-                    {item.href !== "#" ? (
-                      <a 
-                        href={item.href} 
-                        className="text-custom-blue hover:text-custom-blue-700 transition-colors duration-300"
-                      >
-                        {item.value}
-                      </a>
-                    ) : (
-                      <p className="text-gray-600">{item.value}</p>
-                    )}
-                  </div>
+                  {item.isLink ? (
+                    <a 
+                      href={item.href} 
+                      className="flex items-start gap-4 w-full"
+                      target={item.label === "LinkedIn" ? "_blank" : undefined}
+                      rel={item.label === "LinkedIn" ? "noopener noreferrer" : undefined}
+                    >
+                      <span className="text-2xl">{item.icon}</span>
+                      <div>
+                        <h3 className="font-semibold text-gray-900 mb-1">{item.label}</h3>
+                        <span className="text-custom-blue hover:text-custom-blue-700 transition-colors duration-300">
+                          {item.value}
+                        </span>
+                      </div>
+                    </a>
+                  ) : (
+                    <>
+                      <span className="text-2xl">{item.icon}</span>
+                      <div>
+                        <h3 className="font-semibold text-gray-900 mb-1">{item.label}</h3>
+                        <p className="text-gray-600">{item.value}</p>
+                      </div>
+                    </>
+                  )}
                 </motion.li>
               ))}
             </motion.ul>
@@ -110,7 +123,7 @@ export default function Contact() {
             >
               <h3 className="font-semibold text-gray-900 mb-2">Response Time</h3>
               <p className="text-gray-600 text-sm">
-                I typically respond to all inquiries within 24 hours. For urgent projects, feel free to reach out directly via phone.
+                I typically respond to all inquiries within 24 hours. For urgent projects, feel free to reach out directly via LinkedIn.
               </p>
             </motion.div>
           </motion.div>
