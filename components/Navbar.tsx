@@ -15,7 +15,7 @@ export default function Navbar() {
           whileTap={{ scale: 0.98 }}
           transition={{ duration: 0.2, ease: "easeOut" }}
         >
-          <Link href="/" className="font-bold text-xl tracking-tight text-gray-900 hover:text-blue-600 transition-colors duration-300">
+                                <Link href="/" className="font-bold text-xl tracking-tight text-gray-900 hover:text-custom-blue transition-colors duration-300">
             Lem Tippong
           </Link>
         </motion.div>
@@ -36,12 +36,12 @@ export default function Navbar() {
                 href={item.href}
               >
                 {item.label}
-                <motion.span 
-                  className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500"
-                  initial={{ width: 0 }}
-                  whileHover={{ width: "100%" }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                />
+                                            <motion.span
+                              className="absolute -bottom-1 left-0 w-0 h-0.5 bg-custom-blue"
+                              initial={{ width: 0 }}
+                              whileHover={{ width: "100%" }}
+                              transition={{ duration: 0.3, ease: "easeOut" }}
+                            />
               </Link>
             </motion.li>
           ))}

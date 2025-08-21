@@ -90,7 +90,7 @@ export default function ContactForm() {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <motion.button 
-          className="w-full bg-blue-600 text-white rounded-lg px-6 py-3 font-medium hover:bg-blue-700 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25" 
+                      className="w-full bg-custom-blue text-white rounded-lg px-6 py-3 font-medium hover:bg-custom-blue-700 transition-all duration-300 hover:shadow-lg hover:shadow-custom-blue-500/25" 
           type="submit"
           whileHover={{ 
             scale: 1.02, 

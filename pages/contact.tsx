@@ -90,7 +90,7 @@ export default function Contact() {
                     {item.href !== "#" ? (
                       <a 
                         href={item.href} 
-                        className="text-blue-600 hover:text-blue-700 transition-colors duration-300"
+                        className="text-custom-blue hover:text-custom-blue-700 transition-colors duration-300"
                       >
                         {item.value}
                       </a>
@@ -103,7 +103,7 @@ export default function Contact() {
             </motion.ul>
             
             <motion.div 
-              className="mt-8 p-6 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200/50"
+              className="mt-8 p-6 rounded-xl bg-gradient-to-br from-custom-blue-50 to-indigo-50 border border-custom-blue-200"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.8, ease: "easeOut" }}

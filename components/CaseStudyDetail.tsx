@@ -67,7 +67,7 @@ export default function CaseStudyDetail({ title, content, images }: Props) {
       )}
       
       <motion.div 
-        className="prose max-w-none prose-p:leading-relaxed prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline"
+                    className="prose max-w-none prose-p:leading-relaxed prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-custom-blue prose-a:no-underline hover:prose-a:underline"
         variants={itemVariants}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >

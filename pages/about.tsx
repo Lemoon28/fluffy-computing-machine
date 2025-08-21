@@ -75,7 +75,7 @@ export default function About() {
                     {skillGroup.items.map((item, index) => (
                       <motion.span 
                         key={item}
-                        className="text-sm bg-blue-50 text-blue-700 rounded-full px-3 py-1.5 border border-blue-200/50"
+                        className="text-sm bg-custom-blue-50 text-custom-blue-700 rounded-full px-3 py-1.5 border border-custom-blue-200"
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ 
@@ -112,7 +112,7 @@ export default function About() {
                 whileTap={{ scale: 0.98 }}
               >
                 <Link 
-                  className="px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25 inline-block" 
+                  className="px-6 py-3 rounded-lg bg-custom-blue text-white font-medium hover:bg-custom-blue-700 transition-all duration-300 hover:shadow-lg hover:shadow-custom-blue-500/25 inline-block" 
                   href="/contact"
                 >
                   Let&apos;s Work Together

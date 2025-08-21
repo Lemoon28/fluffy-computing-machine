@@ -24,7 +24,7 @@ export default function Footer() {
           ].map((link, index) => (
             <motion.a 
               key={link.href}
-              className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 group"
+              className="flex items-center gap-2 text-gray-600 hover:text-custom-blue transition-colors duration-300 group"
               href={link.href} 
               target="_blank" 
               rel="noreferrer"

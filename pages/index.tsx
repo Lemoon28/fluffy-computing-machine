@@ -70,7 +70,7 @@ export default function Home() {
             transition={{ delay: 0.3 }}
           >
             <motion.h1 
-              className="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent"
+              className="text-5xl sm:text-6xl font-extrabold tracking-tight leading-tight bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent"
               variants={fadeInUp}
             >
               Creative Digital Experiences
@@ -89,7 +89,7 @@ export default function Home() {
             >
               <motion.a 
                 href="#work" 
-                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25"
+                className="bg-custom-blue text-white px-4 py-2 rounded-lg hover:bg-custom-blue-700 transition-all duration-300 hover:shadow-lg hover:shadow-custom-blue-500/25"
                 whileHover={{ 
                   scale: 1.02, 
                   y: -2,
@@ -108,7 +108,7 @@ export default function Home() {
                 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Link href="/contact" className="px-4 py-2 rounded border border-black/10 hover:bg-gray-100 transition-all duration-300 inline-block">
+                <Link href="/contact" className="px-4 py-2 rounded-lg border border-black/10 hover:bg-gray-100 transition-all duration-300 inline-block">
                   Get In Touch
                 </Link>
               </motion.div>
@@ -185,14 +185,14 @@ export default function Home() {
               I&apos;m a digital designer and front‑end developer focused on UX, motion, and performance. I partner with teams to turn ideas into usable, beautiful products.
             </p>
             <ul className="mb-6 text-sm text-gray-600 grid grid-cols-2 gap-3">
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                <strong>Skills:</strong> UX/UI, Web, Mobile
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                <strong>Tools:</strong> Figma, Next.js, Tailwind
-              </li>
+                          <li className="flex items-center gap-2">
+              <span className="w-2 h-2 bg-custom-blue rounded-full"></span>
+              <strong>Skills:</strong> UX/UI, Web, Mobile
+            </li>
+                          <li className="flex items-center gap-2">
+              <span className="w-2 h-2 bg-custom-blue rounded-full"></span>
+              <strong>Tools:</strong> Figma, Next.js, Tailwind
+            </li>
             </ul>
             <motion.div
               whileHover={{ scale: 1.05 }}
