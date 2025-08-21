@@ -24,7 +24,9 @@ export default function App({ Component, pageProps }: AppProps) {
                   {/* Left Content */}
                   <div className="flex-1 text-center md:text-left">
                     <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight leading-tight text-white">
-                      Creative Digital Experiences
+                      <span className="font-inter">Creative Digital</span>
+                      <br />
+                      <span className="font-tiny5">Experiences</span>
                     </h1>
                     
                     <p className="mt-3 text-gray-200 max-w-prose mx-auto md:mx-0 text-base sm:text-lg">

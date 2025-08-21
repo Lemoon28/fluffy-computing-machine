@@ -41,6 +41,7 @@ export default function Navbar() {
 
   const navItems = [
     { href: "/", label: "Home" },
+    { href: "/#work", label: "Projects" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" }
   ];
@@ -87,7 +88,7 @@ export default function Navbar() {
               <Link
                 className={`transition-colors duration-300 relative group ${
                   isScrolled ? "text-gray-600 hover:text-gray-900" : "text-white/90 hover:text-white"
-                }`}
+                } hover:font-semibold`}
                 href={item.href}
               >
                 {item.label}
@@ -114,23 +115,21 @@ export default function Navbar() {
           }`}
           aria-label="Toggle mobile menu"
         >
-          <div className="w-6 h-6 flex flex-col justify-center items-center">
+          <div className="w-6 h-6 flex flex-col justify-center items-center relative">
             <motion.span
-              animate={isMobileMenuOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
+              animate={isMobileMenuOpen ? { rotate: 45, y: 0 } : { rotate: 0, y: 0 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
-              className={`w-6 h-0.5 bg-current transition-all duration-300 ${
-                isMobileMenuOpen ? "bg-current" : ""
-              }`}
+              className="w-6 h-0.5 bg-current absolute"
             />
             <motion.span
               animate={isMobileMenuOpen ? { opacity: 0 } : { opacity: 1 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
-              className="w-6 h-0.5 bg-current mt-1.5"
+              className="w-6 h-0.5 bg-current"
             />
             <motion.span
-              animate={isMobileMenuOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
+              animate={isMobileMenuOpen ? { rotate: -45, y: 0 } : { rotate: 0, y: 0 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
-              className="w-6 h-0.5 bg-current mt-1.5"
+              className="w-6 h-0.5 bg-current absolute"
             />
           </div>
         </button>
@@ -163,7 +162,7 @@ export default function Navbar() {
                       isScrolled 
                         ? "text-gray-900 hover:text-custom-blue" 
                         : "text-white hover:text-blue-200"
-                    }`}
+                    } hover:font-semibold`}
                   >
                     {item.label}
                   </Link>
