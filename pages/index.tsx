@@ -156,7 +156,7 @@ export default function Home() {
           whileInView="animate"
           viewport={{ once: true, margin: "-100px" }}
         >
-          {items.map((item, index) => (
+          {items.map((item) => (
             <motion.div key={item.slug} variants={staggerItem}>
               <CaseStudyCard 
                 title={item.title} 
@@ -182,7 +182,7 @@ export default function Home() {
           >
             <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-gray-900">About Me</h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-              I'm a digital designer and front‑end developer focused on UX, motion, and performance. I partner with teams to turn ideas into usable, beautiful products.
+              I&apos;m a digital designer and front‑end developer focused on UX, motion, and performance. I partner with teams to turn ideas into usable, beautiful products.
             </p>
             <ul className="mb-6 text-sm text-gray-600 grid grid-cols-2 gap-3">
               <li className="flex items-center gap-2">
@@ -216,7 +216,7 @@ export default function Home() {
             viewport={{ once: true, margin: "-100px" }}
           >
             <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-gray-900">Get In Touch</h2>
-            <p className="text-gray-600 mb-4">Have a project in mind? Let's discuss how I can help.</p>
+            <p className="text-gray-600 mb-4">Have a project in mind? Let&apos;s discuss how I can help.</p>
             <ContactForm />
           </motion.div>
         </div>

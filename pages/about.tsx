@@ -79,8 +79,8 @@ export default function About() {
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ 
-                          duration: 0.3, 
-                          delay: 1.4 + groupIndex * 0.1 + index * 0.05,
+                          delay: 1.4 + groupIndex * 0.1 + index * 0.05, 
+                          duration: 0.3,
                           ease: "easeOut"
                         }}
                         whileHover={{ 
@@ -115,7 +115,7 @@ export default function About() {
                   className="px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25 inline-block" 
                   href="/contact"
                 >
-                  Let's Work Together
+                  Let&apos;s Work Together
                 </Link>
               </motion.div>
               <motion.div 

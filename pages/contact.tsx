@@ -37,7 +37,7 @@ export default function Contact() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
             >
-              Ready to start your next project? Let's discuss how I can help bring your vision to life with creative digital solutions.
+              Ready to start your next project? Let&apos;s discuss how I can help bring your vision to life with creative digital solutions.
             </motion.p>
             
             <motion.div 
@@ -62,7 +62,7 @@ export default function Contact() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.0, ease: "easeOut" }}
             >
-              Let's Connect
+              Let&apos;s Connect
             </motion.h2>
             
             <motion.ul 
