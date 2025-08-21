@@ -150,14 +150,14 @@ export default function Home() {
         </motion.div>
 
         <motion.div 
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center"
           variants={staggerContainer}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, margin: "-100px" }}
         >
           {items.map((item) => (
-            <motion.div key={item.slug} variants={staggerItem}>
+            <motion.div key={item.slug} variants={staggerItem} className="w-full max-w-sm">
               <CaseStudyCard 
                 title={item.title} 
                 slug={item.slug} 
@@ -170,31 +170,77 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* About & Contact Section */}
+      {/* About Me Section */}
       <section className="bg-gradient-to-br from-gray-50 to-blue-50/30 border-t border-b border-gray-200/50">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-          {/* About */}
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true, margin: "-100px" }}
           >
             <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-gray-900">About Me</h2>
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
               I&apos;m a digital designer and front‑end developer focused on UX, motion, and performance. I partner with teams to turn ideas into usable, beautiful products.
             </p>
-            <ul className="mb-6 text-sm text-gray-600 grid grid-cols-2 gap-3">
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                <strong>Skills:</strong> UX/UI, Web, Mobile
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                <strong>Tools:</strong> Figma, Next.js, Tailwind
-              </li>
-            </ul>
+          </motion.div>
+          
+          <motion.div
+            className="max-w-4xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 className="text-lg font-semibold mb-3 text-gray-900">Skills & Expertise</h3>
+                <ul className="space-y-2 text-sm text-gray-600">
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                    UX/UI Design & Research
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                    Web & Mobile Development
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                    Motion & Interaction Design
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                    Performance Optimization
+                  </li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 className="text-lg font-semibold mb-3 text-gray-900">Tools & Technologies</h3>
+                <ul className="space-y-2 text-sm text-gray-600">
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                    Figma, Sketch, Adobe Creative Suite
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                    Next.js, React, TypeScript
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                    Tailwind CSS, Framer Motion
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                    Node.js, Git, Vercel
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
             <motion.div 
+              className="text-center"
               whileHover={{ 
                 scale: 1.02, 
                 y: -2,
@@ -202,21 +248,34 @@ export default function Home() {
               }}
               whileTap={{ scale: 0.98 }}
             >
-              <Link href="/about" className="px-4 py-2 rounded border border-black/10 hover:bg-gray-100 transition-all duration-300 inline-block">
-                More about me
+              <Link href="/about" className="px-6 py-3 rounded border border-black/10 hover:bg-gray-100 transition-all duration-300 inline-block">
+                Learn More About Me
               </Link>
             </motion.div>
           </motion.div>
-          
-          {/* Contact */}
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            className="text-center mb-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true, margin: "-100px" }}
           >
             <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-gray-900">Get In Touch</h2>
-            <p className="text-gray-600 mb-4">Have a project in mind? Let&apos;s discuss how I can help.</p>
+            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">Have a project in mind? Let&apos;s discuss how I can help bring your ideas to life.</p>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            viewport={{ once: true, margin: "-100px" }}
+          >
             <ContactForm />
           </motion.div>
         </div>
