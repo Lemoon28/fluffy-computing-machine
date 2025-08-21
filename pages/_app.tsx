@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
               <Navbar />
               {/* Hero section content */}
               <section className="relative border-b border-gray-800/50">
-                <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-12 pb-16 sm:pt-16 sm:pb-24 md:pt-20 md:pb-32 flex flex-col sm:flex-col md:flex-row items-center gap-6 sm:gap-10">
+                <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-12 pb-16 sm:pt-16 sm:pb-24 md:pt-20 md:pb-32 flex flex-col sm:flex-col md:flex-row items-center gap-8 sm:gap-6 md:gap-10">
                   {/* Left Content */}
                   <div className="flex-1 text-center md:text-left">
                     <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight leading-tight text-white">
@@ -51,7 +51,7 @@ export default function App({ Component, pageProps }: AppProps) {
                   </div>
                   
                   {/* Right Content - Profile Image */}
-                  <div className="flex-1 flex justify-center md:justify-end">
+                  <div className="flex-1 flex justify-center md:justify-end mt-8 sm:mt-0">
                     <div className="relative mx-auto md:ml-auto md:mr-0 size-72 sm:size-88 md:size-[28rem] rounded-full overflow-hidden border border-black/5 shadow-inner">
                       <img src="/images/profile.jpg" alt="Portrait of Lem Tippong" className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500" />

@@ -115,21 +115,21 @@ export default function Navbar() {
           }`}
           aria-label="Toggle mobile menu"
         >
-          <div className="w-6 h-6 flex flex-col justify-center items-center relative">
+          <div className="w-6 h-6 flex flex-col justify-center items-center">
             <motion.span
-              animate={isMobileMenuOpen ? { rotate: 45, y: 0 } : { rotate: 0, y: 0 }}
+              animate={isMobileMenuOpen ? { rotate: 45, y: 2 } : { rotate: 0, y: 0 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
-              className="w-6 h-0.5 bg-current absolute"
+              className="w-6 h-0.5 bg-current mb-1.5 origin-center"
             />
             <motion.span
-              animate={isMobileMenuOpen ? { opacity: 0 } : { opacity: 1 }}
+              animate={isMobileMenuOpen ? { opacity: 0, scale: 0 } : { opacity: 1, scale: 1 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
-              className="w-6 h-0.5 bg-current"
+              className="w-6 h-0.5 bg-current mb-1.5 origin-center"
             />
             <motion.span
-              animate={isMobileMenuOpen ? { rotate: -45, y: 0 } : { rotate: 0, y: 0 }}
+              animate={isMobileMenuOpen ? { rotate: -45, y: -2 } : { rotate: 0, y: 0 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
-              className="w-6 h-0.5 bg-current absolute"
+              className="w-6 h-0.5 bg-current origin-center"
             />
           </div>
         </button>
