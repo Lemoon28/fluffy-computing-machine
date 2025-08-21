@@ -1,51 +1,31 @@
-import CaseStudyCard from "@/components/CaseStudyCard";
-import data from "@/data/case-studies.json";
-import Link from "next/link";
-import Image from "next/image";
-import ContactForm from "@/components/ContactForm";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import CaseStudyCard from "@/components/CaseStudyCard";
+import ContactForm from "@/components/ContactForm";
+import data from "@/data/case-studies.json";
 
-type CaseStudy = {
-  title: string;
+interface CaseStudy {
   slug: string;
+  title: string;
   excerpt: string;
-  images: string[];
-  tags?: string[];
   thumb?: string;
-};
-
-// Unified animation system with consistent timing
-const fadeInUp = {
-  initial: { opacity: 0, y: 30 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.8, ease: "easeOut" }
-};
-
-const fadeInLeft = {
-  initial: { opacity: 0, x: -30 },
-  animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.8, ease: "easeOut" }
-};
-
-const fadeInRight = {
-  initial: { opacity: 0, x: 30 },
-  animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.8, ease: "easeOut" }
-};
+  images?: string[];
+  tags: string[];
+}
 
 const staggerContainer = {
+  initial: {},
   animate: {
     transition: {
-      staggerChildren: 0.15,
-      delayChildren: 0.1
-    }
-  }
+      staggerChildren: 0.1,
+    },
+  },
 };
 
 const staggerItem = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: "easeOut" }
+  transition: { duration: 0.6, ease: "easeOut" },
 };
 
 export default function Home() {

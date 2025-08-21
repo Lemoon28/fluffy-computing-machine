@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -38,12 +39,12 @@ export default function App({ Component, pageProps }: AppProps) {
                         View Projects
                       </a>
                       
-                      <a 
+                      <Link 
                         href="/contact" 
                         className="px-4 py-2 rounded-lg border border-white/20 text-white hover:bg-white/10 transition-all duration-300 inline-block"
                       >
                         Get In Touch
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   
