@@ -61,8 +61,9 @@ export default function Home() {
       className="overflow-hidden"
     >
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-blue-50/30 border-b border-gray-200/50">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 flex flex-col sm:flex-col md:flex-row items-center gap-10">
+      <section className="relative bg-cover bg-center bg-no-repeat border-b border-gray-800/50" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1200 800\'%3E%3Cdefs%3E%3CradialGradient id=\'a\' cx=\'75%25\' cy=\'25%25\'%3E%3Cstop offset=\'0%25\' stop-color=\'%232487eb\'/%3E%3Cstop offset=\'50%25\' stop-color=\'%23001F3F\'/%3E%3Cstop offset=\'100%25\' stop-color=\'%23000B1A\'/%3E%3C/radialGradient%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3CfeColorMatrix type=\'matrix\' values=\'1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.1 0\'/%3E%3C/filter%3E%3C/defs%3E%3Crect width=\'1200\' height=\'800\' fill=\'url(%23a)\'/%3E%3Crect width=\'1200\' height=\'800\' filter=\'url(%23noise)\' opacity=\'0.3\'/%3E%3Ccircle cx=\'200\' cy=\'600\' r=\'1\' fill=\'white\' opacity=\'0.6\'/%3E%3Ccircle cx=\'300\' cy=\'500\' r=\'0.5\' fill=\'white\' opacity=\'0.4\'/%3E%3Ccircle cx=\'400\' cy=\'650\' r=\'0.8\' fill=\'white\' opacity=\'0.5\'/%3E%3Ccircle cx=\'150\' cy=\'400\' r=\'0.6\' fill=\'white\' opacity=\'0.3\'/%3E%3Ccircle cx=\'500\' cy=\'300\' r=\'0.7\' fill=\'white\' opacity=\'0.4\'/%3E%3Ccircle cx=\'600\' cy=\'700\' r=\'0.5\' fill=\'white\' opacity=\'0.3\'/%3E%3Ccircle cx=\'250\' cy=\'350\' r=\'0.9\' fill=\'white\' opacity=\'0.5\'/%3E%3Ccircle cx=\'350\' cy=\'200\' r=\'0.6\' fill=\'white\' opacity=\'0.4\'/%3E%3C/svg%3E")' }}>
+        <div className="absolute inset-0 bg-black/20"></div>
+                 <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 md:py-32 flex flex-col sm:flex-col md:flex-row items-center gap-6 sm:gap-10">
           {/* Left Content */}
           <motion.div 
             className="flex-1 text-center md:text-left"
@@ -70,14 +71,14 @@ export default function Home() {
             transition={{ delay: 0.3 }}
           >
             <motion.h1 
-              className="text-5xl sm:text-6xl font-extrabold tracking-tight leading-tight bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent"
+              className="text-5xl sm:text-6xl font-extrabold tracking-tight leading-tight text-white"
               variants={fadeInUp}
             >
               Creative Digital Experiences
             </motion.h1>
             
             <motion.p 
-              className="mt-3 text-gray-600 max-w-prose mx-auto md:mx-0"
+              className="mt-3 text-gray-200 max-w-prose mx-auto md:mx-0 text-lg"
               variants={fadeInUp}
             >
               I craft user‑friendly and visually engaging digital solutions that combine aesthetic excellence with functional design principles.
@@ -108,7 +109,7 @@ export default function Home() {
                 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Link href="/contact" className="px-4 py-2 rounded-lg border border-black/10 hover:bg-gray-100 transition-all duration-300 inline-block">
+                <Link href="/contact" className="px-4 py-2 rounded-lg border border-white/20 text-white hover:bg-white/10 transition-all duration-300 inline-block">
                   Get In Touch
                 </Link>
               </motion.div>
@@ -122,7 +123,7 @@ export default function Home() {
             transition={{ delay: 0.3 }}
           >
             <motion.div 
-              className="relative mx-auto md:ml-auto md:mr-0 size-72 sm:size-84 rounded-full overflow-hidden border border-black/5 shadow-inner"
+              className="relative mx-auto md:ml-auto md:mr-0 size-64 sm:size-80 md:size-96 rounded-full overflow-hidden border border-black/5 shadow-inner"
               whileHover={{ 
                 scale: 1.02, 
                 rotate: 1,
