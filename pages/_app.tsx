@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }: AppProps) {
           {/* Background wrapper for navbar and hero only */}
           <div 
             ref={heroRef}
-            className="relative bg-cover bg-center bg-no-repeat" 
+            className="relative bg-cover bg-center bg-no-repeat h-screen" 
             style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1200 800\'%3E%3Cdefs%3E%3CradialGradient id=\'a\' cx=\'75%25\' cy=\'25%25\'%3E%3Cstop offset=\'0%25\' stop-color=\'%232487eb\'/%3E%3Cstop offset=\'50%25\' stop-color=\'%23001F3F\'/%3E%3Cstop offset=\'100%25\' stop-color=\'%23000B1A\'/%3E%3C/radialGradient%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3CfeColorMatrix type=\'matrix\' values=\'1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.1 0\'/%3E%3C/filter%3E%3C/defs%3E%3Crect width=\'1200\' height=\'800\' fill=\'url(%23a)\'/%3E%3Crect width=\'1200\' height=\'800\' filter=\'url(%23noise)\' opacity=\'0.3\'/%3E%3Ccircle cx=\'200\' cy=\'600\' r=\'1\' fill=\'white\' opacity=\'0.6\'/%3E%3Ccircle cx=\'300\' cy=\'500\' r=\'0.5\' fill=\'white\' opacity=\'0.4\'/%3E%3Ccircle cx=\'400\' cy=\'650\' r=\'0.8\' fill=\'white\' opacity=\'0.5\'/%3E%3Ccircle cx=\'150\' cy=\'400\' r=\'0.6\' fill=\'white\' opacity=\'0.3\'/%3E%3Ccircle cx=\'500\' cy=\'300\' r=\'0.7\' fill=\'white\' opacity=\'0.4\'/%3E%3Ccircle cx=\'600\' cy=\'700\' r=\'0.5\' fill=\'white\' opacity=\'0.3\'/%3E%3Ccircle cx=\'250\' cy=\'350\' r=\'0.9\' fill=\'white\' opacity=\'0.5\'/%3E%3Ccircle cx=\'350\' cy=\'200\' r=\'0.6\' fill=\'white\' opacity=\'0.4\'/%3E%3C/svg%3E")' }}
           >
             {/* Parallax background overlay */}
@@ -45,9 +45,6 @@ export default function App({ Component, pageProps }: AppProps) {
             
             {/* Animated blue elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-              {/* Debug: Static blue circle to test visibility */}
-              <div className="absolute w-32 h-32 bg-blue-500/30 rounded-full" style={{ left: "50%", top: "50%", transform: "translate(-50%, -50%)" }} />
-              
               {/* Large floating blue circle - positioned away from center content */}
               <motion.div
                 className="absolute w-96 h-96 bg-blue-500/20 rounded-full blur-3xl"
@@ -221,14 +218,14 @@ export default function App({ Component, pageProps }: AppProps) {
               />
             </div>
             
-            <div className="relative">
+            <div className="relative h-full flex flex-col">
               <Navbar />
-              {/* Hero section content - Original Size */}
+              {/* Hero section content - Full Screen */}
               <motion.section 
-                className="relative border-b border-gray-800/50 z-10"
+                className="relative flex-1 flex items-center justify-center border-b border-gray-800/50 z-10"
                 style={{ y: heroY, opacity: heroOpacity, scale: heroScale }}
               >
-                <div className="relative mx-auto max-w-6xl px-6 sm:px-8 lg:px-8 pt-12 pb-16 sm:pt-16 sm:pb-24 md:pt-20 md:pb-32 flex flex-col sm:flex-col md:flex-row items-center gap-8 sm:gap-6 md:gap-10">
+                <div className="relative mx-auto max-w-6xl px-6 sm:px-8 lg:px-8 flex flex-col sm:flex-col md:flex-row items-center gap-8 sm:gap-6 md:gap-10">
                   {/* Left Content */}
                   <motion.div 
                     className="flex-1 text-center md:text-left"
@@ -260,19 +257,19 @@ export default function App({ Component, pageProps }: AppProps) {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                       >
-                      <Link 
-                        href="/contact" 
-                        className="px-4 py-2 rounded-lg border border-white/20 text-white hover:bg-white/10 transition-all duration-300 inline-block"
-                      >
-                        Get In Touch
-                      </Link>
+                       <Link 
+                         href="/contact" 
+                         className="px-4 py-2 rounded-lg border border-white/20 text-white hover:bg-white/10 transition-all duration-300 inline-block"
+                       >
+                         Get In Touch
+                       </Link>
                       </motion.div>
                     </div>
                   </motion.div>
                   
                   {/* Right Content - Profile Image */}
                   <motion.div 
-                    className="flex-1 flex justify-center md:justify-end mt-8 sm:mt-0 mb-16 sm:mb-0"
+                    className="flex-1 flex justify-center md:justify-end mt-8 sm:mt-0"
                     initial={{ opacity: 0, x: 30 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
