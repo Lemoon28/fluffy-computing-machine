@@ -228,7 +228,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 className="relative border-b border-gray-800/50 z-10"
                 style={{ y: heroY, opacity: heroOpacity, scale: heroScale }}
               >
-                <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-12 pb-16 sm:pt-16 sm:pb-24 md:pt-20 md:pb-32 flex flex-col sm:flex-col md:flex-row items-center gap-8 sm:gap-6 md:gap-10">
+                <div className="relative mx-auto max-w-6xl px-6 sm:px-8 lg:px-8 pt-12 pb-16 sm:pt-16 sm:pb-24 md:pt-20 md:pb-32 flex flex-col sm:flex-col md:flex-row items-center gap-8 sm:gap-6 md:gap-10">
                   {/* Left Content */}
                   <motion.div 
                     className="flex-1 text-center md:text-left"
@@ -272,7 +272,7 @@ export default function App({ Component, pageProps }: AppProps) {
                   
                   {/* Right Content - Profile Image */}
                   <motion.div 
-                    className="flex-1 flex justify-center md:justify-end mt-8 sm:mt-0"
+                    className="flex-1 flex justify-center md:justify-end mt-8 sm:mt-0 mb-16 sm:mb-0"
                     initial={{ opacity: 0, x: 30 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
@@ -286,7 +286,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 
                 {/* Scroll indicator */}
                 <motion.div 
-                  className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+                  className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.5, duration: 1 }}
