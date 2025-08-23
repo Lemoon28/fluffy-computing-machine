@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }: AppProps) {
           {/* Background wrapper for navbar and hero only */}
           <div 
             ref={heroRef}
-            className="relative bg-cover bg-center bg-no-repeat h-screen" 
+            className="relative bg-cover bg-center bg-no-repeat h-screen pb-20 sm:pb-0" 
             style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1200 800\'%3E%3Cdefs%3E%3CradialGradient id=\'a\' cx=\'75%25\' cy=\'25%25\'%3E%3Cstop offset=\'0%25\' stop-color=\'%232487eb\'/%3E%3Cstop offset=\'50%25\' stop-color=\'%23001F3F\'/%3E%3Cstop offset=\'100%25\' stop-color=\'%23000B1A\'/%3E%3C/radialGradient%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3CfeColorMatrix type=\'matrix\' values=\'1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.1 0\'/%3E%3C/filter%3E%3C/defs%3E%3Crect width=\'1200\' height=\'800\' fill=\'url(%23a)\'/%3E%3Crect width=\'1200\' height=\'800\' filter=\'url(%23noise)\' opacity=\'0.3\'/%3E%3Ccircle cx=\'200\' cy=\'600\' r=\'1\' fill=\'white\' opacity=\'0.6\'/%3E%3Ccircle cx=\'300\' cy=\'500\' r=\'0.5\' fill=\'white\' opacity=\'0.4\'/%3E%3Ccircle cx=\'400\' cy=\'650\' r=\'0.8\' fill=\'white\' opacity=\'0.5\'/%3E%3Ccircle cx=\'150\' cy=\'400\' r=\'0.6\' fill=\'white\' opacity=\'0.3\'/%3E%3Ccircle cx=\'500\' cy=\'300\' r=\'0.7\' fill=\'white\' opacity=\'0.4\'/%3E%3Ccircle cx=\'600\' cy=\'700\' r=\'0.5\' fill=\'white\' opacity=\'0.3\'/%3E%3Ccircle cx=\'250\' cy=\'350\' r=\'0.9\' fill=\'white\' opacity=\'0.5\'/%3E%3Ccircle cx=\'350\' cy=\'200\' r=\'0.6\' fill=\'white\' opacity=\'0.4\'/%3E%3C/svg%3E")' }}
           >
             {/* Parallax background overlay */}
@@ -49,12 +49,12 @@ export default function App({ Component, pageProps }: AppProps) {
               <motion.div
                 className="absolute w-96 h-96 bg-blue-500/20 rounded-full blur-3xl"
                 animate={{
-                  x: [0, 80, -40, 0],
-                  y: [0, -60, 40, 0],
-                  scale: [1, 1.2, 0.8, 1],
+                  x: [0, 40, -20, 0],
+                  y: [0, -30, 20, 0],
+                  scale: [1, 1.1, 0.9, 1],
                 }}
                 transition={{
-                  duration: 20,
+                  duration: 30,
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
@@ -68,12 +68,12 @@ export default function App({ Component, pageProps }: AppProps) {
               <motion.div
                 className="absolute w-64 h-64 bg-blue-500/15 rounded-full blur-2xl"
                 animate={{
-                  x: [0, -80, 60, 0],
-                  y: [0, 60, -40, 0],
-                  scale: [1, 0.7, 1.3, 1],
+                  x: [0, -40, 30, 0],
+                  y: [0, 30, -20, 0],
+                  scale: [1, 0.8, 1.2, 1],
                 }}
                 transition={{
-                  duration: 25,
+                  duration: 35,
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
@@ -87,12 +87,12 @@ export default function App({ Component, pageProps }: AppProps) {
               <motion.div
                 className="absolute w-32 h-32 bg-blue-500/25 rounded-full blur-xl"
                 animate={{
-                  x: [0, 40, -30, 0],
-                  y: [0, -30, 50, 0],
-                  scale: [1, 1.4, 0.6, 1],
+                  x: [0, 20, -15, 0],
+                  y: [0, -15, 25, 0],
+                  scale: [1, 1.2, 0.8, 1],
                 }}
                 transition={{
-                  duration: 18,
+                  duration: 25,
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
@@ -106,13 +106,13 @@ export default function App({ Component, pageProps }: AppProps) {
               <motion.div
                 className="absolute w-48 h-24 bg-blue-500/20 rounded-2xl blur-lg"
                 animate={{
-                  x: [0, -60, 80, 0],
-                  y: [0, 40, -25, 0],
-                  rotate: [0, 15, -10, 0],
-                  scale: [1, 1.1, 0.9, 1],
+                  x: [0, -30, 40, 0],
+                  y: [0, 20, -15, 0],
+                  rotate: [0, 10, -5, 0],
+                  scale: [1, 1.05, 0.95, 1],
                 }}
                 transition={{
-                  duration: 22,
+                  duration: 28,
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
@@ -126,13 +126,13 @@ export default function App({ Component, pageProps }: AppProps) {
               <motion.div
                 className="absolute w-0 h-0 border-l-[40px] border-r-[40px] border-b-[60px] border-l-transparent border-r-transparent border-b-blue-500/20 blur-md"
                 animate={{
-                  x: [0, 60, -40, 0],
-                  y: [0, -50, 40, 0],
-                  rotate: [0, 45, -30, 0],
-                  scale: [1, 0.8, 1.2, 1],
+                  x: [0, 30, -20, 0],
+                  y: [0, -25, 20, 0],
+                  rotate: [0, 20, -15, 0],
+                  scale: [1, 0.9, 1.1, 1],
                 }}
                 transition={{
-                  duration: 28,
+                  duration: 40,
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
@@ -146,12 +146,12 @@ export default function App({ Component, pageProps }: AppProps) {
               <motion.div
                 className="absolute w-4 h-4 bg-blue-500/30 rounded-full"
                 animate={{
-                  x: [0, 30, -20, 0],
-                  y: [0, -25, 30, 0],
-                  scale: [1, 1.5, 0.5, 1],
+                  x: [0, 15, -10, 0],
+                  y: [0, -12, 15, 0],
+                  scale: [1, 1.3, 0.7, 1],
                 }}
                 transition={{
-                  duration: 15,
+                  duration: 20,
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
@@ -164,12 +164,12 @@ export default function App({ Component, pageProps }: AppProps) {
               <motion.div
                 className="absolute w-3 h-3 bg-blue-500/40 rounded-full"
                 animate={{
-                  x: [0, -40, 25, 0],
-                  y: [0, 30, -20, 0],
-                  scale: [1, 0.7, 1.3, 1],
+                  x: [0, -20, 15, 0],
+                  y: [0, 15, -10, 0],
+                  scale: [1, 0.8, 1.2, 1],
                 }}
                 transition={{
-                  duration: 19,
+                  duration: 22,
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
@@ -183,12 +183,12 @@ export default function App({ Component, pageProps }: AppProps) {
               <motion.div
                 className="absolute w-20 h-20 bg-blue-500/25 rounded-full"
                 animate={{
-                  x: [0, 60, -35, 0],
-                  y: [0, -45, 35, 0],
-                  scale: [1, 1.3, 0.7, 1],
+                  x: [0, 30, -20, 0],
+                  y: [0, -20, 15, 0],
+                  scale: [1, 1.2, 0.8, 1],
                 }}
                 transition={{
-                  duration: 16,
+                  duration: 26,
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
@@ -201,13 +201,13 @@ export default function App({ Component, pageProps }: AppProps) {
               <motion.div
                 className="absolute w-16 h-16 bg-blue-500/20 rounded-lg"
                 animate={{
-                  x: [0, -50, 60, 0],
-                  y: [0, 40, -25, 0],
-                  rotate: [0, 25, -15, 0],
-                  scale: [1, 0.8, 1.2, 1],
+                  x: [0, -25, 30, 0],
+                  y: [0, 20, -15, 0],
+                  rotate: [0, 15, -10, 0],
+                  scale: [1, 0.85, 1.15, 1],
                 }}
                 transition={{
-                  duration: 21,
+                  duration: 32,
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
